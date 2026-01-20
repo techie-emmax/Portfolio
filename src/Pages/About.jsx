@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 const About = () => {
   return (
-    <div className="w-[100%] mt-5 bg-white">
+    <div className="w-full mt-5 bg-white">
       <h1 className="text-center text-gray-900 font-bold font-Space-grotesk underline underline-offset-5 text-[35px]">
         About
       </h1>
