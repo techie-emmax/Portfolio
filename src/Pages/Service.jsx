@@ -1,5 +1,6 @@
 import React from 'react';
-import {AppWindowMac, Code, ChartColumnDecreasing , SearchCheck, Lightbulb} from "lucide-react";
+import { NavLink } from "react-router-dom";
+import {AppWindowMac, Code, ChartColumnDecreasing , SearchCheck, Lightbulb, ArrowBigRight } from "lucide-react";
 const Service = () => {
   return (
     <div className="text-center">
@@ -101,7 +102,9 @@ const Service = () => {
                 </p>
               </div>
             </div>
-            <div></div>
+          <NavLink to="/project" className="flex flex-row text-center ml-15 text-2xl text-[#116986ff]  p-4 font-medium gap-4">Projects <ArrowBigRight size={44} color="blue" className="border rounded-full border-[#6a828a] bg-[#f3f7f8] p-1.5 mr-[90%] mb-5"/></NavLink>
+          
+           
           </div>
   )
 }

@@ -78,7 +78,7 @@ const Home = () => {
           Start a Project
         </button>
       </div>
-<NavLink to="/project" >Projects</NavLink>
+
       <Service/>
       <Footer/>
     </div>
