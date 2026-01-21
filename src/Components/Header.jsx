@@ -3,7 +3,7 @@ import { MoveRight } from 'lucide-react';
 
 const Header = () => {
   return (
-    <div className="w-[100%]"> 
+    <div className="w-full"> 
     </div>
   );
 };

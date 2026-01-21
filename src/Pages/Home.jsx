@@ -8,8 +8,8 @@ import Service from "../Pages/Service";
 
 const Home = () => {
   return (
-    <div className="bg-full w-[100%]">
-      <div className="flex flex-col gap-[30%] pt-20 md:pt-40 justify-center bg-[#9ba1b3] bg-full w-[100%] items-center">
+    <div className="bg-full w-full">
+      <div className="flex flex-col gap-[30%] pt-20 md:pt-40 justify-center bg-[#9ba1b3] bg-full w-full items-center">
         <div className="border border-[#116986ff] hover:animate-bounce p-8 border-b-7 border-b-[#116986ff] border-r-10 border-r-[#116986ff] rounded-md">
           <p className="text-4xl md:text-7xl font-Space-grotesk text-[#116986ff] p-5 shadow-amber-300 font-medium shadow-lg">
             Hi I'm Techie Emmax.

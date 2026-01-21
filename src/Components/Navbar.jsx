@@ -9,10 +9,10 @@ const Navbar = () => {
   const [isResumeHovered, setIsResumeHovered] = useState(false);
   const [isPortfolioHovered, setIsPortfolioHovered] = useState(false);
   const [isContactHovered, setIsContactHovered] = useState(false);
-  const [menubutton, setMenubutton] = useState(false);
+  const [isMenuButton, setIsMenuButton] = useState(false);
   const [open,setOpen] = useState(false);
   return (
-    <div className="sticky top-0 flex flex-row justify-center bg-linear-to-r from-[#d8d5d5] to-gray-250 backdrop-blur-lg p-6 md:p-5 gap-[60%] md:gap-[28%] w-[100%]">
+    <div className="sticky top-0 flex flex-row justify-center bg-linear-to-r from-[#d8d5d5] to-gray-250 backdrop-blur-lg p-6 md:p-5 gap-[60%] md:gap-[28%] w-full">
       <img src="emerald creative logo.png" className="w-40 " alt="Logo" />
       <div className="hidden md:flex md:flex-row ml-5 md:gap-20 bg-amber-50 px-15 border border-gray-100 rounded-4xl">
     
@@ -116,12 +116,12 @@ const Navbar = () => {
       )}
       </div>
    <div className="flex items-center md:hidden"
-        onClick={() => setMenubutton(!menubutton)}
+        onClick={() => setIsMenuButton(!isMenuButton)}
       >
         <Menu size={40} color="#333333" />
       </div>
 
-      {menubutton && (
+      {isMenuButton && (
         <div className="z-40 absolute bg-white flex flex-col w-1/2 top-20 right-0 ml-5">
           <NavLink
             to="/"

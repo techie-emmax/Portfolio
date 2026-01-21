@@ -11,12 +11,12 @@ const Service = () => {
                 keep things concise and impactful.
               </span>
             </h2>
-            <div className="flex justify-center mb-5 mt-5 gap-10">
+            <div className="flex flex-col md:flex-row justify-center mb-5 mt-5 gap-10">
               <div className="border-3 bg-amber-100 border-amber-300 flex flex-col items-center justify-start rounded-2xl p-3 text-left">
                 <Lightbulb size={44} color="blue" className="border rounded-full border-[#6a828a] bg-[#f3f7f8] p-1.5 mr-[90%] mb-5"/>
                 <p className="font-bold font-Space-grotesk text-2xl">
                   UI/UX Implementation
-                  <span className="block mt-4 font-light text-xl text-justify">
+                  <span className="block mt-4 font-light text-xs md:text-xl text-justify">
                     Transforming your Figma designs into <br />
                     pixel-perfect,interactive React applications.
                     <br />I specialize in converting static designs
@@ -32,7 +32,7 @@ const Service = () => {
                 <Code size={44} color="blue" className="border rounded-full border-[#6a828a] bg-[#f3f7f8] p-1.5 mr-[90%] mb-5"/>
                 <p className="font-bold font-Space-grotesk text-2xl">
                   React & Next.js Development
-                  <span className="block mt-4 font-light text-xl text-justify">
+                  <span className="block mt-4 font-light text-xs md:text-xl text-justify">
                     Building scalable, production-ready web <br />
                     applications using modern React patterns <br />
                     and Next.js features. This includes server-side <br />
@@ -51,7 +51,7 @@ const Service = () => {
                 <AppWindowMac size={44} color="blue" className="border rounded-full border-[#6a828a] bg-[#f3f7f8] p-1.5 mr-[90%] mb-5"/>
                 <p className="font-bold font-Space-grotesk text-2xl">
                   Landing Pages & Websites
-                  <span className="block mt-4 font-light text-xl text-justify">
+                  <span className="block mt-4 font-light text-xs md:text-xl text-justify">
                     Designing and developing high-converting
                     <br />
                     landing pages and corporate websites that
@@ -65,17 +65,17 @@ const Service = () => {
                     business results. Each page is crafted
                     <br />
                     to tell your story and convert visitors
-                    <br /> into customers.
+                   into customers.
                   </span>
                 </p>
               </div>
             </div>
-            <div className="flex items-center justify-center gap-10 mb-10">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-10 mb-10">
               <div className="border-3 bg-red-200 border-red-400 flex flex-col items-center justify-start rounded-2xl p-3 text-left">
                 <ChartColumnDecreasing size={44} color="blue" className="border rounded-full border-[#6a828a] bg-[#f3f7f8] p-1.5 mr-[90%] mb-5"/>
                 <p className="font-bold font-Space-grotesk text-2xl">
                   Analytics & Dashboards
-                  <span className="block mt-4 font-light text-xl text-justify">
+                  <span className="block mt-4 font-light text-xs md:text-xl text-justify">
                     Creating interactive data visualization <br />
                     dashboards that transform complex <br />
                     business data into actionable insights. <br />
@@ -87,20 +87,7 @@ const Service = () => {
                   </span>
                 </p>
               </div>
-               <div className="border-3 bg-amber-100 border-amber-300 flex flex-col items-center justify-start rounded-2xl p-3 text-left">
-                <SearchCheck size={44} color="blue" className="border rounded-full border-[#6a828a] bg-[#f3f7f8] p-1.5 mr-[90%] mb-5"/>
-                <p className="font-bold font-Space-grotesk text-2xl">
-                  SEO & Performance
-                  <span className="block mt-4 font-light text-xl text-justify">
-                Implementing comprehensive search engine<br />
-                optimization strategies and performance<br /> enhancements to maximize
-                your online<br /> visibility and user experience. This includes<br />technical
-                SEO, Core Web Vitals optimization,<br />lazy loading, code splitting, and
-                advanced caching <br />strategies that improve your search rankings and<br />
-                conversion rates.
-                  </span>
-                </p>
-              </div>
+         
             </div>
           <NavLink to="/project" className="flex flex-row text-center ml-15 text-2xl text-[#116986ff]  p-4 font-medium gap-4">Projects <ArrowBigRight size={44} color="blue" className="border rounded-full border-[#6a828a] bg-[#f3f7f8] p-1.5 mr-[90%] mb-5"/></NavLink>
           
