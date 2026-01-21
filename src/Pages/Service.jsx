@@ -11,9 +11,9 @@ const Service = () => {
                 keep things concise and impactful.
               </span>
             </h2>
-            <div className="flex flex-col md:flex-row justify-center mb-5 mt-5 gap-10">
-              <div className="border-3 bg-amber-100 border-amber-300 flex flex-col items-center justify-start rounded-2xl p-3 text-left">
-                <Lightbulb size={44} color="blue" className="border rounded-full border-[#6a828a] bg-[#f3f7f8] p-1.5 mr-[90%] mb-5"/>
+            <div className="flex flex-col md:flex-row justify-center m-15 md:m-5 gap-10">
+              <div className="border-3 bg-amber-100 border-amber-300 flex flex-col justify-start rounded-2xl p-3 text-left">
+                <Lightbulb size={44} color="blue" className="border rounded-full border-[#6a828a] bg-[#f3f7f8] p-1.5 mr-[65%] md:mr-[90%] mb-5"/>
                 <p className="font-bold font-Space-grotesk text-2xl">
                   UI/UX Implementation
                   <span className="block mt-4 font-light text-xs md:text-xl text-justify">
@@ -48,7 +48,7 @@ const Service = () => {
                 </p>
               </div>
               <div className="border-3 bg-blue-100 border-blue-400 flex flex-col items-center justify-start rounded-2xl p-3 text-left">
-                <AppWindowMac size={44} color="blue" className="border rounded-full border-[#6a828a] bg-[#f3f7f8] p-1.5 mr-[90%] mb-5"/>
+                <AppWindowMac size={44} color="blue" className="border rounded-full border-[#6a828a] bg-[#f3f7f8] p-1.5 mr-[80%] md:mr-[90%] mb-5"/>
                 <p className="font-bold font-Space-grotesk text-2xl">
                   Landing Pages & Websites
                   <span className="block mt-4 font-light text-xs md:text-xl text-justify">
@@ -70,8 +70,8 @@ const Service = () => {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col md:flex-row items-center justify-center gap-10 mb-10">
-              <div className="border-3 bg-red-200 border-red-400 flex flex-col items-center justify-start rounded-2xl p-3 text-left">
+            <div className="flex flex-col md:flex-row items-center justify-center -3 gap-10 mb-10">
+              <div className="border-3 bg-red-200 border-red-400 flex flex-col items-center justify-start rounded-2xl p-8 text-left">
                 <ChartColumnDecreasing size={44} color="blue" className="border rounded-full border-[#6a828a] bg-[#f3f7f8] p-1.5 mr-[90%] mb-5"/>
                 <p className="font-bold font-Space-grotesk text-2xl">
                   Analytics & Dashboards

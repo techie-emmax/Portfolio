@@ -12,9 +12,9 @@ const Navbar = () => {
   const [isMenuButton, setIsMenuButton] = useState(false);
   const [open,setOpen] = useState(false);
   return (
-    <div className="sticky top-0 flex flex-row justify-center bg-linear-to-r from-[#d8d5d5] to-gray-250 backdrop-blur-lg p-6 md:p-5 gap-[60%] md:gap-[28%] w-full">
-      <img src="emerald creative logo.png" className="w-40 " alt="Logo" />
-      <div className="hidden md:flex md:flex-row ml-5 md:gap-20 bg-amber-50 px-15 border border-gray-100 rounded-4xl">
+    <div className="sticky top-0 flex flex-row justify-center bg-linear-to-r from-[#d8d5d5] to-gray-250 backdrop-blur-lg p-8 md:p-5 gap-[60%] md:gap-[28%] w-full">
+      <img src="emerald creative logo.png" className="w-35 md:w-40 " alt="Logo" />
+      <div className="hidden md:flex md:flex-row ml-5 md:gap-20 bg-amber-50 p-15 border border-gray-100 rounded-4xl">
     
         <NavLink
           to="/"

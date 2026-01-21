@@ -57,7 +57,7 @@ const Home = () => {
           Delivering high-quality digital experiences for startups and
           businesses worldwide.
         </h2>
-        <span className="flex flex-row justify-center space-x-28">
+        <span className="flex flex-col md:flex-row md:justify-center items-center space-y-5 md:space-x-28">
           <p className="border border-b-3 rounded-b-2xl p-3 text-center font-Space-grotesk font-bold">
             2+
             <br />
