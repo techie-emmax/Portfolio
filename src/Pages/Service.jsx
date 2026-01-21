@@ -16,7 +16,7 @@ const Service = () => {
                 <Lightbulb size={44} color="blue" className="border rounded-full border-[#6a828a] bg-[#f3f7f8] p-1.5 mr-[65%] md:mr-[90%] mb-5"/>
                 <p className="font-bold font-Space-grotesk text-2xl">
                   UI/UX Implementation
-                  <span className="block mt-4 font-light text-xs md:text-xl text-justify">
+                  <span className="block mt-4 font-light text-xs md:text-xl md:text-justify">
                     Transforming your Figma designs into <br />
                     pixel-perfect,interactive React applications.
                     <br />I specialize in converting static designs
@@ -32,7 +32,7 @@ const Service = () => {
                 <Code size={44} color="blue" className="border rounded-full border-[#6a828a] bg-[#f3f7f8] p-1.5 mr-[90%] mb-5"/>
                 <p className="font-bold font-Space-grotesk text-2xl">
                   React & Next.js Development
-                  <span className="block mt-4 font-light text-xs md:text-xl text-justify">
+                  <span className="block mt-4 font-light text-xs md:text-xl md:text-justify">
                     Building scalable, production-ready web <br />
                     applications using modern React patterns <br />
                     and Next.js features. This includes server-side <br />
@@ -51,7 +51,7 @@ const Service = () => {
                 <AppWindowMac size={44} color="blue" className="border rounded-full border-[#6a828a] bg-[#f3f7f8] p-1.5 mr-[80%] md:mr-[90%] mb-5"/>
                 <p className="font-bold font-Space-grotesk text-2xl">
                   Landing Pages & Websites
-                  <span className="block mt-4 font-light text-xs md:text-xl text-justify">
+                  <span className="block mt-4 font-light text-xs md:text-xl md:text-justify">
                     Designing and developing high-converting
                     <br />
                     landing pages and corporate websites that
@@ -75,7 +75,7 @@ const Service = () => {
                 <ChartColumnDecreasing size={44} color="blue" className="border rounded-full border-[#6a828a] bg-[#f3f7f8] p-1.5 mr-[90%] mb-5"/>
                 <p className="font-bold font-Space-grotesk text-2xl">
                   Analytics & Dashboards
-                  <span className="block mt-4 font-light text-xs md:text-xl text-justify">
+                  <span className="block mt-4 font-light text-xs md:text-xl md:text-justify">
                     Creating interactive data visualization <br />
                     dashboards that transform complex <br />
                     business data into actionable insights. <br />
