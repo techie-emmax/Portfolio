@@ -1,6 +1,7 @@
 import React from "react";
 import { MoveRight, File } from "lucide-react";
 import { NavLink } from "react-router-dom";
+import Service from "./Service";
 
 const About = () => {
   return (
@@ -79,6 +80,7 @@ const About = () => {
       </div>
       
       </div>
+      <Service/>
       </div>
    
   );

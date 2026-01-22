@@ -12,9 +12,9 @@ const Navbar = () => {
   const [isMenuButton, setIsMenuButton] = useState(false);
   const [open,setOpen] = useState(false);
   return (
-    <div className="sticky top-0 flex flex-row justify-center bg-linear-to-r from-[#d8d5d5] to-gray-250 backdrop-blur-lg p-8 md:p-5 gap-[60%] md:gap-[28%] w-full">
+    <div className="sticky top-0 flex flex-row items-center justify-center bg-linear-to-r from-[#d8d5d5] to-gray-250 backdrop-blur-lg p-8 md:p-5 gap-[60%] md:gap-[28%] w-full">
       <img src="emerald creative logo.png" className="w-35 md:w-40 " alt="Logo" />
-      <div className="hidden md:flex md:flex-row ml-5 md:gap-20 bg-amber-50 p-15 border border-gray-100 rounded-4xl">
+      <div className="hidden md:flex md:flex-row ml-15 md:gap-20 bg-amber-50  p-15 md:p-6 border border-gray-100 rounded-4xl">
     
         <NavLink
           to="/"
@@ -106,7 +106,7 @@ const Navbar = () => {
           )}
         </NavLink>
       </div>
-      <div className="hidden md:flex "><button className="relative p-5 font-Space-grotesk border text-[18px] border-[#313851] border-b-4 border-r-6 rounded-2xl" onClick={()=>setOpen(true)} onDoubleClick={()=>setOpen(false)}>Hire me</button>
+      <div className="hidden md:flex "><button className="relative p-5 font-Space-grotesk border text-[18px] border-[#313851]  rounded-2xl" onClick={()=>setOpen(true)} onDoubleClick={()=>setOpen(false)}>Hire me</button>
       {open &&(
         <div className="absolute right-[0%] top-[200%]">
         <div className="z-20 p-5 md:p-0">  
@@ -135,8 +135,9 @@ const Navbar = () => {
           >
             About
           </NavLink>
+      
           <NavLink
-            to="/service"
+            to="/project"
             className="text-xl font-semibold border-b-4 border-b-gray-100 p-4"
           >
             Project

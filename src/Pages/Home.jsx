@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../Components/Header";
 import About from "../Pages/About";
 import Footer from "../Components/Footer";
-import { Download, Instagram, Github, Linkedin, Eclipse } from "lucide-react";
+import { Download, Instagram, Github, Linkedin, Eclipse ,ArrowBigRight } from "lucide-react";
 import { NavLink } from "react-router-dom";
 import Service from "../Pages/Service";
 
@@ -11,14 +11,14 @@ const Home = () => {
     <div className="bg-full w-full">
       <div className="flex flex-col gap-[30%] pt-20 md:pt-40 justify-center bg-[#9ba1b3] bg-full w-full items-center">
         <div className="border border-[#116986ff] hover:animate-bounce p-8 border-b-7 border-b-[#116986ff] border-r-10 border-r-[#116986ff] rounded-md">
-          <p className="text-4xl md:text-7xl font-Space-grotesk text-[#116986ff] p-5 shadow-amber-300 font-medium shadow-lg">
+          <p className="text-4xl md:text-7xl font-Space-grotesk text-[#116986ff] p-5 shadow-amber-300 font-light md:font-medium shadow-lg">
             Hi I'm Techie Emmax.
             <br />
             Front End Developer
             <span className="block font-light text-4xl text-black"></span>
           </p>
         </div>
-        <p className="text-black mt-3 font-medium font-Space-grotesk animate-pulse text-xl text-center">
+        <p className="text-black mt-3 font-medium font-Space-grotesk hover:animate-pulse text-xl text-center">
           Specialize in building high performance end user interface,that are
           intuitive and fully responsive.
           <br /> Turning complex design concepts into seamless engaging user
@@ -27,7 +27,7 @@ const Home = () => {
 
         <div className="mb-36 mt-5">
           <div className="flex flex-row gap-[10%]">
-            <span className="flex flex-row gap-10  p-2 rounded-2xl">
+            <span className="flex animate-pulse flex-row gap-10  p-2 rounded-2xl">
               <div className="flex border rounded-4xl p-5 flex-col gap-3 text-white font-Space-grotesk">
                 <NavLink
                   to="https://github.com/techie-emmax"
@@ -80,6 +80,8 @@ const Home = () => {
       </div>
 
       <Service/>
+      <NavLink to="/project" className="flex flex-row text-center ml-15 text-2xl text-[#116986ff]  p-4 font-medium gap-4">Projects <ArrowBigRight size={44} color="blue" className="border rounded-full border-[#6a828a] bg-[#f3f7f8] p-1.5  mb-5"/></NavLink>
+                
       <Footer/>
     </div>
   );

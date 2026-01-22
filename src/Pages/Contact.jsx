@@ -46,9 +46,9 @@ const Contact = () => {
               <p className="font-regular font-display text-[16px] mr-5 mt-2 md:mt-0 text-[#6F7681]">
                 +234 905 577 4813 
               </p>
+      
             </div>
-
-            <div>
+             <div>
               <span className="flex items-center gap-4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +75,6 @@ const Contact = () => {
               </p>
             </div>
           </div>
-          <div className="flex mt-5 gap-10 md:gap-15 px-5 md:px-0">
             <div>
               <span className="flex items-center gap-4">
                 <svg
@@ -103,10 +102,7 @@ const Contact = () => {
                 <span className="block">9a.m - 8 p.m</span>
               </p>
             </div>
-            <div>
-            
-            </div>
-          </div>
+          
         </div>
 <div className="p-5 md:p-0">  
       <div className="bg-[#FFFFFF] pt-5 pl-5 pb-5 pr-5 border border-white md:border-0 rounded-lg">
