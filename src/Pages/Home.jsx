@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../Components/Header";
 import About from "../Pages/About";
 import Footer from "../Components/Footer";
-import { Download, Instagram, Github, Linkedin, Eclipse ,ArrowBigRight } from "lucide-react";
+import { Download, Instagram, Github, Linkedin, Eclipse ,ArrowBigRight , Mail } from "lucide-react";
 import { NavLink } from "react-router-dom";
 import Service from "../Pages/Service";
 
@@ -18,16 +18,16 @@ const Home = () => {
             <span className="block font-light text-4xl text-black"></span>
           </p>
         </div>
-        <p className="text-black mt-3 font-medium font-Space-grotesk hover:animate-pulse text-xl text-center">
+        <p className="text-black mt-3 font-medium font-Space-grotesk p-3 md:p-0 hover:animate-pulse text-xl text-center">
           Specialize in building high performance end user interface,that are
           intuitive and fully responsive.
           <br /> Turning complex design concepts into seamless engaging user
           experience is my core focus.
         </p>
 
-        <div className="mb-36 mt-5">
+        <div className="mb-10 md:mb-36 mt-5">
           <div className="flex flex-row gap-[10%]">
-            <span className="flex animate-pulse flex-row gap-10  p-2 rounded-2xl">
+            <span className="flex animate-pulse flex-row gap-10 p-5 md:p-2 rounded-2xl">
               <div className="flex border rounded-4xl p-5 flex-col gap-3 text-white font-Space-grotesk">
                 <NavLink
                   to="https://github.com/techie-emmax"
@@ -42,11 +42,16 @@ const Home = () => {
                 </NavLink>
               </div>
               <div className="flex border rounded-4xl p-5 flex-col text-white gap-3 font-Space-grotesk">
-                <NavLink to="">
+                <NavLink to="" >
                   <Instagram />
                 </NavLink>
               </div>
-              <a></a>
+              <div className="flex border rounded-4xl p-5 flex-col text-white gap-3 font-Space-grotesk">
+                <NavLink className="text-white" >
+                  <Mail />
+                  </NavLink>
+              </div>
+              
             </span>
             <span></span>
           </div>

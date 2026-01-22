@@ -1,5 +1,5 @@
 import React from "react";
-import { MoveRight, File } from "lucide-react";
+import { MoveRight , Download } from "lucide-react";
 import { NavLink } from "react-router-dom";
 import Service from "./Service";
 
@@ -41,7 +41,7 @@ const About = () => {
               I'd love to hear from you. Let's collaborate to create something amazing. Feel free to customize it<br/> to fit your style and
               experience!
             </p>
-             <button to="/My Resume.pdf" target="blank" className="bg-green-200 flex gap-5 rounded-b-2xl border-gray-800 text-[#116986ff] mt-3 p-3 font-Space-grotesk text-[24px]">View Resume <File className="animate-bounce"/></button>
+             <button to="/My Resume.pdf" target="blank" className="bg-green-200 flex gap-5 rounded-b-2xl border-gray-800 text-[#116986ff] mt-3 p-3 font-Space-grotesk text-[24px]">View Resume <Download className="animate-bounce"/></button>
           </span>
         </h1>
         
