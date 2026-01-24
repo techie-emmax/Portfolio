@@ -135,7 +135,7 @@ const Contact = () => {
             name=""
             placeholder="Message"
             id=""
-            className="mt-5 pt-2 pl-2 pr-30 md:pr-68 pb-40 rounded-lg  bg-[#F1F1F1]  font-display"
+            className="mt-5 pt-2 pl-2 pr-30 mb-7 md:mb-7 md:pr-68 pb-40 rounded-lg  bg-[#F1F1F1]  font-display"
           />
           <span className="block">
             <NavLink to="mailto:techieemax@gmail.com" className="border border-[#116986ff] rounded-lg pr-20 md:pr-44 pl-20 md:pl-46 pt-4 pb-4 md:mt-3 font-display bg-[#116986ff] font-bold text-[#FFFFFF]">

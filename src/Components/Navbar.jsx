@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import {  House, UserRound, Contact, GalleryHorizontalEnd, Menu } from "lucide-react";
+import {  House, UserRound, Contact, GalleryHorizontalEnd, Menu , X} from "lucide-react";
 
 const Navbar = () => {
   
@@ -106,7 +106,7 @@ const Navbar = () => {
           )}
         </NavLink>
       </div>
-      <div className="hidden md:flex "><button className="relative p-5 font-Space-grotesk border text-[18px] border-[#313851]  rounded-2xl" onClick={()=>setOpen(true)} onDoubleClick={()=>setOpen(false)}>Hire me</button>
+      <div className="hidden  md:flex "><button className="relative p-5 font-Space-grotesk border text-[18px] border-[#313851]  rounded-2xl" onClick={()=>setOpen(true)} onDoubleClick={()=>setOpen(false)}>Hire me</button>
       {open &&(
         <div className="absolute right-[0%] top-[200%]">
         <div className="z-20 p-5 md:p-0">  
@@ -115,36 +115,36 @@ const Navbar = () => {
           </div>
       )}
       </div>
-   <div className="flex items-center md:hidden"
+  <div className="flex items-center md:hidden"
         onClick={() => setIsMenuButton(!isMenuButton)}
       >
-        <Menu size={40} color="#333333" />
+        {isMenuButton ?  <X size={40} color="#333333" className="border p-1 border-[#ffffff] rounded-2xl bg-[#ffffff]"/>: <Menu size={40} color="#333333" className="border p-1 border-[#ffffff] rounded-2xl bg-[#ffffff]"/>}
       </div>
 
       {isMenuButton && (
-        <div className="z-40 absolute bg-white flex flex-col w-1/2 top-20 right-0 ml-5">
+        <div className="z-40 absolute  bg-white flex flex-col w-2/2 top-30 right-0 ml-5">
           <NavLink
             to="/"
-            className="text-xl font-semibold border-b-4 border-b-gray-100 p-4"
+            className="text-xl font-semibold border-b-4 border-b-white hover:bg-[#116986ff] hover:text-white p-4"
           >
             Home
           </NavLink>
           <NavLink
             to="/about"
-            className="text-xl font-semibold border-b-4 border-b-gray-100 p-4"
+            className="text-xl font-semibold border-b-4 border-b-white hover:bg-[#116986ff] hover:text-white p-4"
           >
             About
           </NavLink>
       
           <NavLink
             to="/project"
-            className="text-xl font-semibold border-b-4 border-b-gray-100 p-4"
+            className="text-xl font-semibold border-b-4 border-b-white hover:bg-[#116986ff] hover:text-white p-4"
           >
             Project
           </NavLink>
           <NavLink
             to="/contact"
-            className="text-xl font-semibold p-4"
+            className="text-xl font-semibold border-b-4 border-b-white hover:bg-[#116986ff] hover:text-white p-4"
           >
             Contact
           </NavLink>
