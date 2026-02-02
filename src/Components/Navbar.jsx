@@ -1,27 +1,42 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import {  House, UserRound, Contact, GalleryHorizontalEnd, Menu , X} from "lucide-react";
+import {
+  House,
+  UserRound,
+  Contact,
+  GalleryHorizontalEnd,
+  Menu,
+  X,
+} from "lucide-react";
 
 const Navbar = () => {
-  
   const [isHomeHovered, setIsHomeHovered] = useState(false);
   const [isAboutHovered, setIsAboutHovered] = useState(false);
   const [isResumeHovered, setIsResumeHovered] = useState(false);
   const [isPortfolioHovered, setIsPortfolioHovered] = useState(false);
   const [isContactHovered, setIsContactHovered] = useState(false);
   const [isMenuButton, setIsMenuButton] = useState(false);
-  const [open,setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    document.title = `Techie-Emmax-Portfolio`;
+  }, []);
+
   return (
-    <div className="sticky top-0 flex flex-row items-center justify-center bg-linear-to-r from-[#d8d5d5] to-gray-250 backdrop-blur-lg p-8 md:p-5 gap-[60%] md:gap-[28%] w-full">
-      <img src="emerald creative logo.png" className="w-35 md:w-40 " alt="Logo" />
+    <div className="sticky top-0 flex flex-row items-center justify-center bg-linear-to-r from-[#d8d5d5] to-gray-250 backdrop-blur-lg p-8 md:p-5 gap-[60%] z-30 md:gap-[28%] w-full">
+      <img
+        src="emerald creative logo.png"
+        className="w-35 md:w-40 "
+        alt="Logo"
+      />
       <div className="hidden md:flex md:flex-row ml-15 md:gap-20 bg-amber-50  p-15 md:p-6 border border-gray-100 rounded-4xl">
-    
         <NavLink
           to="/"
-         
           className={({ isActive }) =>
             `relative flex flex-col items-center text-[#313851] text-2xl font-Space-grotesk mt-4 ${
-              isActive ? "font-bold underline hover:scale-110" : "hover:font-bold hover:text-[#116986ff] hover:underline hover:scale-110"
+              isActive
+                ? "font-bold underline hover:scale-110"
+                : "hover:font-bold hover:text-[#116986ff] hover:underline hover:scale-110"
             }`
           }
           onMouseEnter={() => setIsHomeHovered(true)}
@@ -32,7 +47,9 @@ const Navbar = () => {
               <House />
               <div className="absolute top-5 font-Space-grotesk">
                 {(isActive || isHomeHovered) && (
-                  <p className="font-Space-grotesk text-[18px] text-[#313851]">Home</p>
+                  <p className="font-Space-grotesk text-[18px] text-[#313851]">
+                    Home
+                  </p>
                 )}
               </div>
             </>
@@ -43,7 +60,9 @@ const Navbar = () => {
           to="/about"
           className={({ isActive }) =>
             `relative flex flex-col items-center text-[#313851] text-2xl font-Space-grotesk mt-4 ${
-              isActive ? "font-bold underline" : "hover:font-bold hover:text-[#313851] hover:underline hover:scale-110"
+              isActive
+                ? "font-bold underline"
+                : "hover:font-bold hover:text-[#313851] hover:underline hover:scale-110"
             }`
           }
           onMouseEnter={() => setIsAboutHovered(true)}
@@ -54,7 +73,9 @@ const Navbar = () => {
               <UserRound />
               <div className="absolute top-5 font-Space-grotesk">
                 {(isActive || isAboutHovered) && (
-                  <p className="font-Space-grotesk text-[18px] text-[#313851]">About</p>
+                  <p className="font-Space-grotesk text-[18px] text-[#313851]">
+                    About
+                  </p>
                 )}
               </div>
             </>
@@ -65,7 +86,9 @@ const Navbar = () => {
           to="/project"
           className={({ isActive }) =>
             `relative flex flex-col items-center text-[#313851] text-2xl font-Space-grotesk mt-4 ${
-              isActive ? "font-bold underline" : "hover:text-[#116986ff] hover:font-bold hover:underline hover:scale-110"
+              isActive
+                ? "font-bold underline"
+                : "hover:text-[#116986ff] hover:font-bold hover:underline hover:scale-110"
             }`
           }
           onMouseEnter={() => setIsPortfolioHovered(true)}
@@ -76,19 +99,22 @@ const Navbar = () => {
               <GalleryHorizontalEnd />
               <div className="absolute top-5 font-Space-grotesk">
                 {(isActive || isPortfolioHovered) && (
-                  <p className="font-Space-grotesk text-[18px] text-[#116986ff]">Project</p>
+                  <p className="font-Space-grotesk text-[18px] text-[#116986ff]">
+                    Project
+                  </p>
                 )}
               </div>
             </>
           )}
         </NavLink>
 
-        
         <NavLink
           to="/contact"
           className={({ isActive }) =>
             `relative flex flex-col items-center text-[#313851] text-2xl font-Space-grotesk mt-4 ${
-              isActive ? "font-bold underline" : "hover:text-[#313851] hover:font-bold hover:underline hover:scale-110"
+              isActive
+                ? "font-bold underline"
+                : "hover:text-[#313851] hover:font-bold hover:underline hover:scale-110"
             }`
           }
           onMouseEnter={() => setIsContactHovered(true)}
@@ -99,26 +125,46 @@ const Navbar = () => {
               <Contact />
               <div className="absolute top-5 font-Space-grotesk">
                 {(isActive || isContactHovered) && (
-                  <p className="font-Space-grotesk text-[18px] text-[#313851]">Contact</p>
+                  <p className="font-Space-grotesk text-[18px] text-[#313851]">
+                    Contact
+                  </p>
                 )}
               </div>
             </>
           )}
         </NavLink>
       </div>
-      <div className="hidden  md:flex "><button className="relative p-5 font-Space-grotesk border text-[18px] border-[#313851]  rounded-2xl" onClick={()=>setOpen(true)} onDoubleClick={()=>setOpen(false)}>Hire me</button>
-      {open &&(
-        <div className="absolute right-[0%] top-[200%]">
-        <div className="z-20 p-5 md:p-0">  
-          
-                </div>
+      <div className="hidden  md:flex ">
+        <button
+          className="relative p-5 font-Space-grotesk border text-[18px] border-[#313851]  rounded-2xl"
+          onClick={() => setOpen(true)}
+          onDoubleClick={() => setOpen(false)}
+        >
+          Hire me
+        </button>
+        {open && (
+          <div className="absolute right-[0%] top-[200%]">
+            <div className="z-20 p-5 md:p-0"></div>
           </div>
-      )}
+        )}
       </div>
-  <div className="flex items-center md:hidden"
+      <div
+        className="flex items-center md:hidden"
         onClick={() => setIsMenuButton(!isMenuButton)}
       >
-        {isMenuButton ?  <X size={40} color="#333333" className="border p-1 border-[#ffffff] rounded-2xl bg-[#ffffff]"/>: <Menu size={40} color="#333333" className="border p-1 border-[#ffffff] rounded-2xl bg-[#ffffff]"/>}
+        {isMenuButton ? (
+          <X
+            size={40}
+            color="#333333"
+            className="border p-1 border-[#ffffff] rounded-2xl bg-[#ffffff]"
+          />
+        ) : (
+          <Menu
+            size={40}
+            color="#333333"
+            className="border p-1 border-[#ffffff] rounded-2xl bg-[#ffffff]"
+          />
+        )}
       </div>
 
       {isMenuButton && (
@@ -135,7 +181,7 @@ const Navbar = () => {
           >
             About
           </NavLink>
-      
+
           <NavLink
             to="/project"
             className="text-xl font-semibold border-b-4 border-b-white hover:bg-[#116986ff] hover:text-white p-4"

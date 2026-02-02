@@ -18,11 +18,11 @@ const About = () => {
          
           <span className="pb-15">
             
-            <p className="text-[20px] hover:text-gray-800 hover:scale-100 md:hover:scale-110 hover:mb-5 hover:mt-5 leading-tight mt-3">
+            <p className="shadow-md shadow-gray-400 p-4 rounded-4xl text-[20px] hover:text-gray-800 hover:scale-100 md:hover:scale-110 hover:mb-5 hover:mt-5 leading-tight mt-3">
               Frontend Developer | Crafting Intuitive Web Experiences
               <br />
               <br/>
-              Hello, I'm Techie-Emmax, a results-driven frontend developer with a strong passion<br /> 
+              Hello, I'm Techie-Emmax, a results-driven frontend developer with a strong passion<br className="hidden md:"/> 
               for designing and developing responsive, user-centric web applications.With 2 years<br /> 
               of experience in the industry, I've developed a strong expertise in HTML, CSS, <br />
               JavaScript,and React. I've successfully delivered numerous projects,ranging from <br />
@@ -36,17 +36,20 @@ const About = () => {
               that meet their objectives and exceed their expectations. Outside of coding, I enjoy exploring<br/>
               new technologies, trying out new recipes,and geeking out over the latest web trends.
             </p>
-            <p className="text-sm hover:text-gray-800 hover:scale-100 md:hover:scale-110 text-[20px] hover:mt-5">
+            <p className="text-sm hover:shadow-md mt-3 p-4 hover:text-gray-800 hover:scale-100 md:hover:scale-110 text-[20px] hover:mt-5">
               If you're looking for a dedicated and passionate frontend developer to help bring your project to life, <br />
               I'd love to hear from you. Let's collaborate to create something amazing. Feel free to customize it<br/> to fit your style and
               experience!
             </p>
-             <button to="/My Resume.pdf" target="blank" className="bg-green-200 flex gap-5 rounded-b-2xl border-gray-800 text-[#116986ff] mt-3 p-3 font-Space-grotesk text-[24px]">View Resume <Download className="animate-bounce"/></button>
-          </span>
+            <div className="flex flex-row gap-3 justify-center items-center">
+              <button ><a to="/Res.pdf" target="blank" className="bg-green-200 flex gap-5 rounded-b-2xl border-gray-800 text-[#116986ff] mt-3 p-3 font-Space-grotesk text-[24px]">View Resume <Download className="animate-bounce"/></a></button>
+             <button>
+              <a  to="tel:+2349055774813" target="blank" className="bg-green-200 flex gap-5 rounded-b-2xl border-gray-800 text-[#116986ff] mt-3 p-3 font-Space-grotesk text-[24px]">Get in Touch <Download className="animate-bounce"/></a>
+             </button>
+          </div>
+         </span>
         </h1>
         
-       
-       
       </div>
       <div className="p-10 flex gap-20">
       <div>

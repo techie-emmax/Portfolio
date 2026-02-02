@@ -9,8 +9,8 @@ const Home = () => {
   return (
     <div className="bg-full w-full">
       <div className="flex flex-col gap-[30%] pt-20 md:pt-40 justify-center bg-[#9ba1b3] bg-full w-full items-center">
-        <div className="border border-[#116986ff] hover:animate-bounce p-8 border-b-7 border-b-[#116986ff] border-r-10 border-r-[#116986ff] rounded-md">
-          <p className="text-3xl md:text-7xl font-Space-grotesk text-[#116986ff] p-5 shadow-amber-300 font-medium shadow-lg">
+        <div className="border border-[#116986ff] hover:animate-bounce p-4 md:p-8 border-b-7 border-b-[#116986ff] border-r-10 border-r-[#116986ff] rounded-md">
+          <p className="text-2xl md:text-7xl font-Space-grotesk text-[#116986ff] p-5 shadow-amber-300 font-medium shadow-lg">
             Hi I'm Techie Emmax.
             <br />
             Front End Developer
@@ -25,7 +25,7 @@ const Home = () => {
         </p>
 
         <div className="mb-10 md:mb-36 mt-5">
-          <div className="flex flex-row gap-[10%]">
+          <div className="flex flex-row gap-[7%] md:gap-[10%]">
             <span className="flex animate-pulse flex-row gap-10 p-5 md:p-2 rounded-2xl">
               <div className="flex border rounded-4xl p-5 flex-col gap-3 text-white font-Space-grotesk">
                 <NavLink
