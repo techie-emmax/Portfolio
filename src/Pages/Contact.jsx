@@ -76,7 +76,7 @@ const Contact = () => {
               </p>
             </div>
           </div>
-          <div className="mt-7 pl-30 md:pl-0 md:mt-2">
+          <div className="mt-7 pl-20 md:pl-0 md:mt-2">
             <span className="flex items-center gap-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -120,14 +120,14 @@ const Contact = () => {
                 name=""
                 id=""
                 placeholder="Name"
-                className=" pl-2 pt-2 pr-5 pb-2 md:pr-5 outline-none rounded-lg  font-Space-grotesk text-[#6F7681] bg-[#F1F1F1]"
+                className=" pl-2 pt-2 pr-5 pb-2 md:pr-5 outline-[#116986ff] rounded-lg  font-Space-grotesk text-[#6F7681] bg-[#F1F1F1]"
               />
               <input
                 type="email"
                 name="email"
                 id="email"
                 placeholder="Email"
-                className="pl-2 pt-2 pb-2 pr-5 md:pr-10 rounded-lg font-Space-grotesk text-[#6F7681] bg-[#F1F1F1]"
+                className="pl-2 pt-2 pb-2 pr-5 md:pr-10 outline-[#116986ff] rounded-lg font-Space-grotesk text-[#6F7681] bg-[#F1F1F1]"
               />
             </div>
             <input
@@ -135,12 +135,12 @@ const Contact = () => {
               name=""
               placeholder="Message"
               id=""
-              className="mt-5 pt-2 pl-2 pr-5 mb-7 md:mb-7 md:pr-68 pb-40 rounded-lg  bg-[#F1F1F1] font-Space-grotesk"
+              className="mt-5 pt-2 pl-2 pr-3 mb-7 md:mb-7 md:pr-68 pb-40 rounded-lg outline-[#116986ff] bg-[#F1F1F1] font-Space-grotesk"
             />
             <span className="block">
               <NavLink
                 to="mailto:techieemmax@gmail.com"
-                className="border border-[#116986ff] rounded-lg pr-5 md:pr-44 pl-20 md:pl-46 pt-4 pb-4 md:mt-3 font-Space-grotesk bg-[#116986ff] text-[15px] font-bold text-[#FFFFFF]"
+                className="border border-[#116986ff] rounded-lg pr-4 md:pr-44 pl-4 md:pl-46 pt-4 pb-4 md:mt-3 font-Space-grotesk bg-[#116986ff] text-[15px] font-bold text-[#FFFFFF]"
               >
                 Send Message
               </NavLink>
