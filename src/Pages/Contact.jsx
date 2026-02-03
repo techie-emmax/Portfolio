@@ -46,7 +46,7 @@ const Contact = () => {
                 </p>
               </span>
               <p className="font-regular font-Space-grotesk text-[12px] md:text-[16px] mr-5 mt-2 md:mt-0 text-[#212325]">
-                +234 905 577 4813
+                +234-905-577-4813
               </p>
             </div>
             <div>
@@ -98,7 +98,7 @@ const Contact = () => {
                 Working Hours
               </p>
             </span>
-            <p className="pr-[60%] md:pr-[0%] font-regular font-Space-grotesk text-[16px] text-[#6F7681]">
+            <p className="pr-[50%] md:pr-[0%] font-regular font-Space-grotesk text-[16px] text-[#6F7681]">
               Mon - Friday
               <span className="block">9a.m - 8 p.m</span>
             </p>
@@ -110,7 +110,7 @@ const Contact = () => {
               Send us Message
               <span className="block font-Space-grotesk font-regular text-[16px] text-[#6F7681] mt-5">
                 Feel free to fill up the form and our team will get back to you
-                <br />
+                <br className="hidden md:block"/>
                 within 24 hours.
               </span>
             </p>
