@@ -51,7 +51,7 @@ const Navbar = () => {
       />
       
     
-      <div className="hidden md:flex md:flex-row ml-15 md:gap-20 bg-amber-50  p-15 md:p-6 border border-gray-100 rounded-4xl">
+      <div className="hidden md:flex md:flex-row ml-15 md:ml-0 md:gap-20 bg-amber-50 p-15 md:p-7 border border-gray-100 rounded-4xl">
         <NavLink
           to="/"
           className={({ isActive }) =>

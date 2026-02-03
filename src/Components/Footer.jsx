@@ -47,10 +47,10 @@ const Footer = () => {
           >
             E-mail
           </NavLink>
-          <NavLink className="text-white font-Space-grotesk text-[18px]" to="">
+          <NavLink to="" className="text-white font-Space-grotesk text-[18px]" >
             LinkedIn
           </NavLink>
-            <NavLink className="text-white font-Space-grotesk text-[18px]" to="">
+            <NavLink to="https://wa.me/2349055774813" className="text-white font-Space-grotesk text-[18px] mb-5 md:mb-0">
             Whatsapp
           </NavLink>
         </div>

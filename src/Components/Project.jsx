@@ -5,9 +5,9 @@ import { ChevronsRight, ArrowBigRight} from "lucide-react";
 const Project = () => {
   return (
 <div>
- <h3 className="text-center mb-10 text-[35px] font-bold text-gray-900 font-Space-grotesk underline underline-offset-6">
+ <h3 className="text-center mb-10 text-[35px] font-bold text-gray-900 font-Space-grotesk hover:scale-y-110">
         Featured Projects</h3>  
-<div className="flex flex-col md:flex-row gap-8 md:gap-10 p-13 -mt-13 md:p-5">
+<div className="flex flex-col md:flex-row gap-8 md:gap-10 p-14 -mt-13 md:p-5">
 
   <div className="w-full shadow-md shadow-gray-400 flex flex-row rounded-2xl mt-2 items-top bg-blue-300 p-5 justify-center gap-10">
     <p className="font-Space-grotesk font-bold text-[24px]">Kuisine Website

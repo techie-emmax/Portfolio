@@ -26,7 +26,7 @@ const Home = () => {
 
         <div className="mb-10 md:mb-36 mt-5">
           <div className="flex flex-row gap-[7%] md:gap-[10%]">
-            <span className="flex animate-pulse flex-row gap-10 p-5 md:p-2 rounded-2xl">
+            <span className="flex animate-pulse flex-row gap-10 p-9 md:p-2 rounded-2xl">
               <div className="flex border rounded-4xl p-5 flex-col gap-3 text-white font-Space-grotesk">
                 <NavLink
                   to="https://github.com/techie-emmax"
