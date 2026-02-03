@@ -50,6 +50,9 @@ const Footer = () => {
           <NavLink className="text-white font-Space-grotesk text-[18px]" to="">
             LinkedIn
           </NavLink>
+            <NavLink className="text-white font-Space-grotesk text-[18px]" to="">
+            Whatsapp
+          </NavLink>
         </div>
       </div>
       <p className="text-center mt-1 pt-3 pb-3 font-regular font-Space-grotesk text-sm bg-[#116986ff] md:text-[18px] text-[#d5d8e2]">

@@ -23,7 +23,7 @@ const Contact = () => {
             <br />
             and answer any question
           </p>
-          <div className="flex items-center gap-10 md:gap-20 mt-10 px-5 md:px-0">
+          <div className="flex flex-col md:flex-row items-center gap-10 md:gap-20 mt-10 px-5 md:px-0">
             <div>
               <span className="flex items-center gap-4">
                 <svg
@@ -76,8 +76,8 @@ const Contact = () => {
               </p>
             </div>
           </div>
-          <div className="mt-2">
-            <span className="pl-5 md:pl-0  flex items-center gap-4">
+          <div className="mt-7 pl-30 md:pl-0 md:mt-2">
+            <span className="flex items-center gap-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -120,14 +120,14 @@ const Contact = () => {
                 name=""
                 id=""
                 placeholder="Name"
-                className=" pl-2 pt-2 pr-20 pb-2 md:pr-5 outline-none rounded-lg  font-Space-grotesk text-[#6F7681] bg-[#F1F1F1]"
+                className=" pl-2 pt-2 pr-5 pb-2 md:pr-5 outline-none rounded-lg  font-Space-grotesk text-[#6F7681] bg-[#F1F1F1]"
               />
               <input
                 type="email"
                 name="email"
                 id="email"
                 placeholder="Email"
-                className="pl-2 pt-2 pb-2 pr-20 md:pr-10 rounded-lg font-Space-grotesk text-[#6F7681] bg-[#F1F1F1]"
+                className="pl-2 pt-2 pb-2 pr-5 md:pr-10 rounded-lg font-Space-grotesk text-[#6F7681] bg-[#F1F1F1]"
               />
             </div>
             <input
@@ -135,12 +135,12 @@ const Contact = () => {
               name=""
               placeholder="Message"
               id=""
-              className="mt-5 pt-2 pl-2 pr-20 mb-7 md:mb-7 md:pr-68 pb-40 rounded-lg  bg-[#F1F1F1] font-Space-grotesk"
+              className="mt-5 pt-2 pl-2 pr-5 mb-7 md:mb-7 md:pr-68 pb-40 rounded-lg  bg-[#F1F1F1] font-Space-grotesk"
             />
             <span className="block">
               <NavLink
                 to="mailto:techieemmax@gmail.com"
-                className="border border-[#116986ff] rounded-lg pr-20 md:pr-44 pl-20 md:pl-46 pt-4 pb-4 md:mt-3 font-Space-grotesk bg-[#116986ff] text-[15px] font-bold text-[#FFFFFF]"
+                className="border border-[#116986ff] rounded-lg pr-5 md:pr-44 pl-20 md:pl-46 pt-4 pb-4 md:mt-3 font-Space-grotesk bg-[#116986ff] text-[15px] font-bold text-[#FFFFFF]"
               >
                 Send Message
               </NavLink>

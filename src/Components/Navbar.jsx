@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react"; 
 import { NavLink } from "react-router-dom";
 import {
   House,
@@ -18,17 +18,39 @@ const Navbar = () => {
   const [isMenuButton, setIsMenuButton] = useState(false);
   const [open, setOpen] = useState(false);
 
+ 
+  const navRef = useRef(null);
+
   useEffect(() => {
     document.title = `Techie-Emmax-Portfolio`;
+
+   
+    const handleClickOutside = (event) => {
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        setIsMenuButton(false);
+      }
+    };
+
+  
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+   
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
   }, []);
 
+  const closeMenu = () => setIsMenuButton(false);
+
   return (
-    <div className="sticky top-0 flex flex-row items-center justify-center bg-linear-to-r from-[#d8d5d5] to-gray-250 backdrop-blur-lg p-8 md:p-5 gap-[60%] z-30 md:gap-[28%] w-full">
+ 
+    <div ref={navRef} className="sticky top-0 flex flex-row items-center justify-center bg-linear-to-r from-[#d8d5d5] to-gray-250 backdrop-blur-lg p-8 md:p-5 gap-[60%] z-30 md:gap-[28%] w-full">
       <img
         src="emerald creative logo.png"
         className="w-35 md:w-40 "
         alt="Logo"
       />
+      
+    
       <div className="hidden md:flex md:flex-row ml-15 md:gap-20 bg-amber-50  p-15 md:p-6 border border-gray-100 rounded-4xl">
         <NavLink
           to="/"
@@ -134,6 +156,7 @@ const Navbar = () => {
           )}
         </NavLink>
       </div>
+
       <div className="hidden  md:flex ">
         <button
           className="relative p-5 font-Space-grotesk border text-[18px] border-[#313851]  rounded-2xl"
@@ -142,15 +165,15 @@ const Navbar = () => {
         >
           Hire me
         </button>
-        {open && (
-          <div className="absolute right-[0%] top-[200%]">
-            <div className="z-20 p-5 md:p-0"></div>
-          </div>
-        )}
       </div>
+
+      
       <div
-        className="flex items-center md:hidden"
-        onClick={() => setIsMenuButton(!isMenuButton)}
+        className="flex items-center md:hidden cursor-pointer"
+        onClick={(e) => {
+            e.stopPropagation(); 
+            setIsMenuButton(!isMenuButton);
+        }}
       >
         {isMenuButton ? (
           <X
@@ -167,29 +190,33 @@ const Navbar = () => {
         )}
       </div>
 
+     
       {isMenuButton && (
-        <div className="z-40 absolute  bg-white flex flex-col w-2/2 top-30 right-0 ml-5">
+        <div className="z-40 absolute bg-white flex flex-col w-2/2 top-30 right-0 ml-5 shadow-lg">
           <NavLink
             to="/"
+            onClick={closeMenu}
             className="text-xl font-semibold border-b-4 border-b-white hover:bg-[#116986ff] hover:text-white p-4"
           >
             Home
           </NavLink>
           <NavLink
             to="/about"
+            onClick={closeMenu}
             className="text-xl font-semibold border-b-4 border-b-white hover:bg-[#116986ff] hover:text-white p-4"
           >
             About
           </NavLink>
-
           <NavLink
             to="/project"
+            onClick={closeMenu}
             className="text-xl font-semibold border-b-4 border-b-white hover:bg-[#116986ff] hover:text-white p-4"
           >
             Project
           </NavLink>
           <NavLink
             to="/contact"
+            onClick={closeMenu}
             className="text-xl font-semibold border-b-4 border-b-white hover:bg-[#116986ff] hover:text-white p-4"
           >
             Contact
