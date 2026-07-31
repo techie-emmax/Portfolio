@@ -4,14 +4,14 @@ import Navbar from './Components/Navbar';
 import Home from './Pages/Home'
 import Contact from './Pages/Contact';
 import About from './Pages/About';
-import Project from './Components/Project';
+import Project from './Components/project';
 import Service from './Pages/Service';
 import Footer from './Components/Footer';
 
 
 const App = () => {
   return (
-    <div className='bg-gray-50 bg-full justify-between items-center flex flex-col'>
+    <div className='bg-gray-50 justify-between items-center flex flex-col w-full'>
         <BrowserRouter>
         <Navbar/>
           <Routes>
@@ -23,7 +23,7 @@ const App = () => {
           </Routes>
            <Footer/>
         </BrowserRouter>
-       
+
     </div>
   
   )

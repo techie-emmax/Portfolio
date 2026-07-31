@@ -22,14 +22,14 @@ const About = () => {
               Frontend Developer | Crafting Intuitive Web Experiences
               <br />
               <br/>
-              Hello, I'm Techie-Emmax, a results-driven frontend developer with a strong passion<br className="hidden md:"/> 
+              Hello, I'm Techie-Emmax, a results-driven frontend developer with a strong passion<br className="hidden md:block"/> 
               for designing and developing responsive, user-centric web applications.With 2 years<br /> 
               of experience in the industry, I've developed a strong expertise in HTML, CSS, <br />
               JavaScript,and React. I've successfully delivered numerous projects,ranging from <br />
               complex web applications to sleek marketing websites, and have a keen eye for <br />
               UI/UX best practices.<br />
               <br/>
-              I'm driven by a passion for creating web experiences that are not only visually <br />
+              I'm driven by a passion for creating web experiences that are not only visually <br className="hidden md:block"/>
               stunning but also accessible, performant, and scalable. I believe that great code <br />
               should be readable, maintainable,and efficient. My approach is centered around the user.
               <br /> I take the time to understand their needs, pain points, and goals, and craft solutions<br/> 
@@ -42,7 +42,7 @@ const About = () => {
               experience!
             </p>
             <div className="flex flex-row gap-3 justify-center items-center">
-              <button ><a to="/Res.pdf" target="blank" className="bg-green-200 flex gap-5 rounded-b-2xl border-gray-800 text-[#116986ff] mt-3 p-3 font-Space-grotesk text-[24px]">View Resume <Download className="animate-bounce"/></a></button>
+              <button ><a to="/Gbode Resume.pdf" target="blank" className="bg-green-200 flex gap-5 rounded-b-2xl border-gray-800 text-[#116986ff] mt-3 p-3 font-Space-grotesk text-[24px]">View Resume <Download className="animate-bounce"/></a></button>
              <button>
               <a  to="tel:+2349055774813" target="blank" className="bg-green-200 flex gap-5 rounded-b-2xl border-gray-800 text-[#116986ff] mt-3 p-3 font-Space-grotesk text-[24px]">Get in Touch <Download className="animate-bounce"/></a>
              </button>

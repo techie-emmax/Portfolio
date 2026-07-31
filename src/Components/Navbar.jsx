@@ -159,7 +159,7 @@ const Navbar = () => {
 
       <div className="hidden  md:flex ">
         <button
-          className="relative p-5 font-Space-grotesk border text-[18px] border-[#313851]  rounded-2xl"
+          className="relative p-5 font-Space-grotesk border text-[18px] border-[#313851] hover:bg-blue-900 hover:text-gray-300 hover:animation- animation- rounded-2xl"
           onClick={() => setOpen(true)}
           onDoubleClick={() => setOpen(false)}
         >
