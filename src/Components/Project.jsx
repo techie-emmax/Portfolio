@@ -39,7 +39,7 @@ const Project = () => {
         Featured Projects
       </h3>
 
-      <div className="flex flex-row gap-8 p-15 md:p-10">
+      <div className="flex flex-col md:flex-row  gap-8 p-15 md:p-10">
         {projectsData.map((project, index) => (
           <div
             key={index}

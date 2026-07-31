@@ -25,7 +25,7 @@ const Home = () => {
         </p>
 
         <div className="mb-10 md:mb-36 mt-5 p-6">
-          <div className="flex flex-row gap-[7%] md:gap-[10%]">
+          <div className="flex flex-row gap-[7%] md:gap-[10%] p-5">
             <span className="flex animate-pulse flex-row gap-10 p-9 md:p-2 rounded-2xl">
               <div className="flex border rounded-4xl p-5 flex-col gap-3 text-white font-Space-grotesk">
                 <NavLink
