@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../Components/Header";
 import About from "../Pages/About";
-import { Download, Instagram, Github, Linkedin, Eclipse ,ArrowBigRight , Mail } from "lucide-react";
+import { Download, Facebook, Github, Linkedin, Eclipse ,ArrowBigRight , Mail } from "lucide-react";
 import { NavLink } from "react-router-dom";
 import Service from "../Pages/Service";
 
@@ -41,12 +41,12 @@ const Home = () => {
                 </NavLink>
               </div>
               <div className="flex border rounded-4xl p-5 flex-col text-white gap-3 font-Space-grotesk">
-                <NavLink to="" >
-                  <Instagram />
+                <NavLink to="https://www.facebook.com/share/1LkYTpDAnF" target="blank">
+                  <Facebook />
                 </NavLink>
               </div>
               <div className="flex border rounded-4xl p-5 flex-col text-white gap-3 font-Space-grotesk">
-                <NavLink className="text-white" >
+                <NavLink to="mailto:techieemmax@gmail.com" className="text-white" >
                   <Mail />
                   </NavLink>
               </div>
@@ -68,12 +68,12 @@ const Home = () => {
             Years of experience
           </p>
           <p className="border border-b-3 rounded-b-2xl p-3 text-center font-Space-grotesk font-bold">
-            4.8★
+            4.0★
             <br />
             Client Satisfaction Rating
           </p>
           <p className="border border-b-3 rounded-b-2xl p-3 text-center font-Space-grotesk font-bold">
-            30+
+            10+
             <br />
             Web Projects Delivered
           </p>

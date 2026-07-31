@@ -5,37 +5,41 @@ const projectsData = [
   {
     title: "Kuisine Website",
     link: "#",
-    description: "Designed and developed a responsive Kuisine website showcasing recipes, food photography and a blog for food enthusiasts.",
-    tech: ["HTML", "Tailwind CSS", "JavaScript"]
+    description:
+      "Designed and developed a responsive Kuisine website showcasing recipes, food photography and a blog for food enthusiasts.",
+    tech: ["HTML", "Tailwind CSS", "JavaScript"],
   },
   {
     title: "Photography Website",
-    link: "https://photography-lemon.vercel.app/",
-    description: "Where code meets frame, I blend pixels and light building responsive galleries and capturing moments.",
-    tech: ["HTML", "Tailwind CSS", "JavaScript"]
+    link: "https://photography-lemon.vercel.app",
+    description:
+      "Where code meets frame, I blend pixels and light building responsive galleries and capturing moments.",
+    tech: ["HTML", "Tailwind CSS", "JavaScript"],
   },
   {
     title: "Inlance Website",
-    link: "https://copy-3-pi.vercel.app/",
-    description: "A responsive repair and maintenance website built for managing service requests and connecting with clients.",
-    tech: ["HTML", "CSS", "JavaScript"]
+    link: "https://copy-3-pi.vercel.app",
+    description:
+      "A responsive repair and maintenance website built for managing service requests and connecting with clients.",
+    tech: ["HTML", "CSS", "JavaScript"],
   },
   {
     title: "Techty Website",
-    link: "https://figma-six-eta.vercel.app/",
-    description: "A responsive repair and maintenance website built for managing service requests and connecting with clients.",
-    tech: ["React", "Tailwind CSS", "JavaScript"]
-  }
+    link: "https://figma-six-eta.vercel.app",
+    description:
+      "A responsive repair and maintenance website built for managing service requests and connecting with clients.",
+    tech: ["React", "Tailwind CSS", "JavaScript"],
+  },
 ];
 
 const Project = () => {
   return (
-    <div className="w-full py-10">
-      <h3 className="text-center mb-10 text-[35px] font-bold text-gray-900 font-Space-grotesk">
+    <div className="w-full">
+      <h3 className="text-center mb-5 text-[35px] font-bold text-gray-900 font-Space-grotesk mt-5">
         Featured Projects
       </h3>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-5 md:px-10">
+      <div className="flex flex-row gap-8 p-15 md:p-10">
         {projectsData.map((project, index) => (
           <div
             key={index}

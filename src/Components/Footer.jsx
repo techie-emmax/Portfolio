@@ -4,7 +4,7 @@ import { CornerRightDown } from "lucide-react";
 const Footer = () => {
   return (
     <div className="w-full">
-      <div className="flex flex-col md:flex-row items-top gap-4 md:gap-44 bg-[#116986ff] mt-15">
+      <div className="flex flex-col md:flex-row items-top gap-4 md:gap-44 bg-[#116986ff] pt-5">
         <h3 className="p-3 font-Space-grotesk text-cyan-200 font-medium text-[24px]">
           Let's build something awesome <CornerRightDown size={24} />
         </h3>
